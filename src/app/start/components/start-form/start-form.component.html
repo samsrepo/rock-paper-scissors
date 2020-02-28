@@ -1,0 +1,12 @@
+<div class="form-container">
+  <form [formGroup]="startForm" (ngSubmit)="submitted.emit()" #form="ngForm">
+    <h2>Can you beat the machine?</h2>
+    <div class="input-container">
+      <input placeholder="Player name" type="text" formControlName="player_name"/>
+      <span class="error" *ngIf="playerName.invalid && playerName.errors.required && (playerName.dirty || playerName.touched || form.submitted) ">
+        Please enter a name for your player
+      </span>
+    </div>
+    <button type="submit">Bring it on!</button>
+  </form>
+</div>

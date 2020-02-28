@@ -1,0 +1,26 @@
+@import 'variables';
+
+:host {
+  max-width: 100%;
+  height: fit-content;
+  display: block;
+  top: 0;
+}
+
+h3 {
+  text-align: center;
+  margin: 0.5em;
+}
+p {
+  margin: 0.5em;
+  text-align: center;
+}
+
+.sam-text {
+  font-family: 'Palanquin', sans-serif;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}

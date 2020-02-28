@@ -1,0 +1,25 @@
+<div clas="container">
+  <div class="round-container">
+    <h3>Round</h3>
+    <p>{{(status === statuses.ROUND_OVER) ? 'Round Complete' : rounds.length+1}}</p>
+  </div>
+  <div class="players-container">
+    <div>
+      <h3>Challenger</h3>
+      <p>{{playerName}}</p>
+      <fa-icon *ngIf="status === statuses.ROUND_OVER" class="icon" [icon]="rounds.slice(-1)[0] | determineMoveIcon: 'player'" flip="horizontal"></fa-icon>
+    </div>
+    <div>
+      <h2>VS</h2>
+    </div>
+    <div>
+      <h3>Opponent</h3>
+      <p>Machine</p>
+      <fa-icon *ngIf="status === statuses.ROUND_OVER" class="icon" [icon]="rounds.slice(-1)[0] | determineMoveIcon: 'computer'"></fa-icon>
+    </div>
+  </div>
+  <div *ngIf="status === statuses.ROUND_OVER" class="winner-container">
+    <h2>{{rounds.slice(-1)[0] | formatRoundWinner: playerName}}</h2>
+    <button (click)="startNextRound.emit()">Continue</button>
+  </div>
+</div>

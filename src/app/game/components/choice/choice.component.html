@@ -1,0 +1,12 @@
+<h2>Choose Wisely...</h2>
+<div class="choice-container">
+  <button class="button choice-button" (click)="performMove.emit(choices.ROCK)">
+    <fa-icon [icon]="icons.faHandRock"></fa-icon>
+  </button>
+  <button class="button choice-button" (click)="performMove.emit(choices.PAPER)">
+    <fa-icon [icon]="icons.faHandPaper"></fa-icon>
+  </button>
+  <button class="button choice-button" (click)="performMove.emit(choices.SCISSORS)">
+    <fa-icon [icon]="icons.faHandScissors"></fa-icon>
+  </button>
+</div>

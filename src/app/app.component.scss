@@ -1,0 +1,13 @@
+@import 'variables';
+
+div {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 100%;
+  position: relative;
+  max-width: $max-app-width;
+  margin: 0 auto;
+  padding-left: 2em;
+  padding-right: 2em;
+}

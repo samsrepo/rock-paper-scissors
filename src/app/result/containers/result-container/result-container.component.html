@@ -1,0 +1,10 @@
+<div class="container">
+  <app-result-detail classs="main-result" [winner]="(rounds | async) | formatGameWinner"></app-result-detail>
+  <div class="rounds">
+    <app-round-result *ngFor="let round of rounds | async; let i = index" [result]="round" [index]="i"></app-round-result>
+  </div>
+  <div class="buttons">
+    <button (click)="playAgain()">Play Again</button>
+    <button (click)="startOver()">Start Again</button>
+  </div>
+</div>

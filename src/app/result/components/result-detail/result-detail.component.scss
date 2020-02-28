@@ -1,0 +1,13 @@
+h1 {
+  text-align: center;
+}
+
+.score-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  div {
+    text-align: center;
+    font-size: 2em;
+  }
+}

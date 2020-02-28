@@ -1,0 +1,14 @@
+@import 'mixins';
+
+.container {
+  height: 100%;
+  width: 100%;
+}
+
+app-start-form {
+  margin: auto;
+  display: block;
+  position: relative;
+  width: fit-content;
+  @include verticalAlign();
+}

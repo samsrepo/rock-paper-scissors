@@ -1,0 +1,14 @@
+@import 'mixins';
+@import 'variables';
+
+h1 {
+  margin-bottom: 0.1em;
+  @include on-mobile {
+    font-size: 1.5em;
+  }
+}
+
+h3 {
+  color: $subtitle-colour;
+  margin: 0;
+}

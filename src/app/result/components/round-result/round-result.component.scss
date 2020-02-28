@@ -1,0 +1,56 @@
+@import 'mixins';
+@import 'variables';
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+  "heading heading heading"
+  "player score computer";
+  grid-gap: 1em;
+
+  @include on-mobile {
+    grid-template-areas:
+      "heading heading"
+      "player computer"
+      "score score";
+    grid-template-rows: auto 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.heading {
+  grid-area: heading;
+  text-align: center;
+}
+.player {
+  grid-area: player;
+}
+
+.computer {
+  grid-area: computer;
+}
+
+.score {
+  grid-area: score;
+}
+
+.avatar-container {
+  background-color: $square-colour;
+  border-radius: 1em;
+}
+
+.avatar-container:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.score-section {
+  width: 33%;
+  float: left;
+  text-align: center;
+  font-weight: 700;
+  font-size: 2em;
+}
+

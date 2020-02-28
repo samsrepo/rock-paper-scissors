@@ -1,0 +1,27 @@
+.container {
+  display: grid;
+  grid-template-areas:
+  "main"
+  "rounds"
+  "buttons";
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+  max-width: 40em;
+  margin: auto;
+  grid-row-gap: 1em;
+}
+
+.main-result {
+  grid-area: main;
+}
+
+.rounds {
+  grid-area: rounds;
+}
+
+.buttons {
+  grid-area: buttons;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
+}

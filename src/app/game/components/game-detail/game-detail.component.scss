@@ -1,0 +1,43 @@
+.container {
+  display: grid;
+  grid-template-areas:
+  "rounds"
+  "players";
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.winner-container {
+  grid-area: winner;
+}
+
+.round-container {
+  grid-area: rounds;
+  h3 {
+    text-align: center;
+  }
+  p {
+    font-size: 2em;
+    margin: 0;
+    font-weight: 900;
+    text-align: center;
+  }
+}
+
+.players-container {
+  grid-area: players;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  div {
+    text-align: center;
+  }
+}
+
+h2{
+  text-align: center;
+}
+
+.icon {
+  font-size: 7em;
+  display: block;
+  text-align: center;
+}

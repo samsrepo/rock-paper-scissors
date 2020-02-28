@@ -1,0 +1,22 @@
+<div class="container">
+  <h2 class="heading">Round {{index+1}}</h2>
+  <div class="player avatar-container">
+
+  </div>
+  <div class="score">
+    <div class="score-section">
+      <p>{{result.player.result | formatRoundPoint}}</p>
+      <p>W</p>
+    </div>
+    <div class="score-section">
+      <p>-</p>
+    </div>
+    <div class="score-section">
+      <p>{{result.computer.result | formatRoundPoint}}</p>
+      <p>L</p>
+    </div>
+  </div>
+  <div class="computer avatar-container">
+
+  </div>
+</div>

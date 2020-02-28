@@ -1,0 +1,4 @@
+<div class="container">
+  <app-game-detail [status]="status | async" [rounds]="rounds | async" [playerName]="playerName | async" (startNextRound)="startNextRound()"></app-game-detail>
+  <app-choice *ngIf="(status | async) === statuses.IN_PROGRESS" class="choices" (performMove)="performMove($event)"></app-choice>
+</div>

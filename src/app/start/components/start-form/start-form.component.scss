@@ -1,0 +1,27 @@
+@import 'variables';
+
+h2 {
+  margin-bottom: 1em;
+}
+
+input {
+  background-color: $background-text-input;
+  border: 0;
+  width: 100%;
+  padding: 0.5em 0.3em 0.5em 0.3em;
+  border-radius: 0.3em;
+  font-size: 1.5em;
+  display: block;
+  box-sizing: border-box;
+}
+
+.error {
+  color: $error-colour;
+  font-weight: 600;
+  margin: 0.5em;
+  display: block;
+}
+
+.input-container {
+  min-height: 5.5em;
+}

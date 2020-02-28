@@ -1,0 +1,13 @@
+:host {
+  width: 100%;
+}
+
+.choice-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 1em;
+
+  button {
+    height: 3em;
+  }
+}
